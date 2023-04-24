@@ -1,0 +1,690 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.header .container{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+}
+
+.container{
+width: 960px;
+margin:0 auto;
+}
+
+header .logo{
+ float: left;
+ padding: 10px;
+}
+
+header .headmenu{
+    float:right;
+	text-align: center;
+}
+
+header .headmenu ul{
+    float: right;
+}
+
+header .headmenu ul li{
+    float: left;
+	padding: 20px;
+    display: block;
+}
+
+.clearflix{
+	clear: both;
+}
+
+.section1{
+	width: 100%;
+	height: 550px;
+	background-image: url(../images/banner1.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	align-items: center;
+    justify-content:center;
+	display: flex;
+}
+
+.section1 .container{
+	padding-bottom: 90px;
+	align-items: center top;
+}
+
+ h1{
+    color:black;
+	font-size: 50px;
+	text-align: center ;
+	font-weight: bold;
+}
+
+.section1 h2{
+	color:black;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+.section2 {
+	width: 100%;
+	background-color: rgba(47, 230, 159, 0.979);
+}
+
+.section2 .section2row{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.section2 .text{
+	width: 60%;
+
+	padding:20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.section2 h2{
+	color:whitesmoke;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+.section2 h3{
+	color:whitesmoke;
+	font-size: 20px;
+}
+
+.section2 .logo2{
+	width:40%;
+	justify-content: flex-end;
+    display: flex;
+}
+
+.section3{
+	background-color: whitesmoke;
+}
+
+.section3 li{
+	padding-bottom: 10px;
+}
+.section3 h2{
+	padding-top: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.section3 .left_content{
+	padding-top: 20px;
+}
+.section3 .right_content .rightimage{
+	width: 60%;
+	float: left;
+	text-align: right;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.section3 .right_content .right-main-text{
+	width: 40%;
+	float: right;
+}
+
+.section3 .right_content .right-main-text h4{
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	padding:10px;
+	padding-bottom: 10px;
+}
+
+.section3 .left_content .main-text{
+	width: 40%; 
+	float: left;
+	align-items: right;
+}
+
+.section3 .main-text h4{
+	font-size: 20px;
+	float: right;
+	font-weight: bold;
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.section3 .main-text .links a{
+	float: right;
+	padding: 10px;
+	color: rgb(15, 248, 15);
+}
+
+.section3 .main-text p{
+	float: right;
+	padding-right:10px;
+}
+
+.section3 .left_content .image{
+	width: 60%;
+	float: right;
+}
+
+.section3 .image img{
+	border-radius: 10px;
+}
+
+.section4 .container{
+	width:100%;
+}
+
+.section4 .container .part1{
+	width: 50%;
+	float: left;
+	background-color: rgba(28, 36, 29, 0.781);
+}
+
+.section4 .container .part2{
+	width: 50%;
+	float: right;
+}
+.section4 .part1{
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.section4 .part1 h2{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.section4 .part1 p{
+	color: white;
+	padding-top: 15px;
+}
+
+.section4 .part1 .para {
+	padding: 15px;
+}
+
+.section5{
+	width: 100%;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.section5 .container5{
+	width: 70%;
+	margin: 0 15% ;
+	background-color:rgba(28, 36, 29, 0.781);
+	align-items: center;
+}
+
+.section5 .container5 h3{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.section5 .menu1 ul h4{
+	color: white;
+	padding-bottom: 10px;
+}
+
+.section5 .menu1 {
+	margin: 20px;
+}
+
+.section5 .menu1 ul{
+	overflow: hidden;
+}
+
+.section5 .menu1 ul li{
+	width: 50%;
+	min-height: 100px;
+	float: left;
+}
+
+.section5 .menu1 ul .material-icons{
+	float: left;
+	padding: 10px;
+
+}
+
+.section5 .menu1 ul li p{
+	padding-bottom: 10px;
+	text-align: left;
+	display: flex;
+}
+
+.section5 span.placelogo{
+	width: 100px;
+	color: white;
+	float: left;
+}
+
+.section5 .button1{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.section5 .button1 a{
+	border-radius: 20px;
+	padding: 7px 15px;
+	color: white;
+	border: 1px solid white;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.section5 .right{
+	width: calc(100% - 100px);
+	float: right;
+}
+
+.section6{
+	background-color: darkseagreen;
+}
+
+.section6 .textteam{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.section6 .textteam h3{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.section6 .textteam p{
+	padding-bottom: 20px;
+}
+
+.section6 .worker-img img{
+	border-radius: 50%;
+}
+
+.section6 .worker-img{
+	width: 100px;
+	float: left;
+}
+
+.section6 .worker .name{
+	width: calc(100% - 120px);
+	padding-left: 20px;
+	float: left;
+}
+
+.section6 .worker ul{
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+}
+
+.section6 .worker ul li{
+	width: 33.33%;
+	float: right;
+}
+
+.section6 .worker ul li .name{
+	float: right;
+}
+
+.section7{
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+
+.section7 .product h3{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.section7 .prologo ul{
+	width: 100%;
+	padding-top: 20px;
+}
+
+.section7 .prologo ul li{
+	width: 25%;
+	float: left;
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.section8{
+	width: 100%;
+	background-color: rgb(221, 220, 220);
+	text-align: center;
+}
+
+.section8 .part3{
+	width: 40%;
+	float: left;
+}
+
+.section8 .part4{
+	width: 60%;
+	float: right;
+	padding-top: 10px;
+}
+
+.section8 .part4 h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.section8 .part4 h3{
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.section8 .part4 p strong{
+	font-weight: bold;
+}
+
+.section8 .part4 .p1{
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.section9{
+	width: 100%;
+	background-color: rgba(47, 230, 159, 0.979);
+}
+
+.section9 .goals ul{
+	width: 100%;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.section9 .goals ul li{
+	width: 25%;
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+.section9 .goals ul li img{
+	color: honeydew;
+}
+
+.section9 .goals ul li h3{
+	padding-top: 10px;
+	color: honeydew;
+	font-weight: bold;
+}
+
+.section9 .goals ul li p{
+	padding-top: 10px;
+	color: honeydew;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.section10{
+	width: 100%;
+	background-color:rgb(221, 220, 220); 
+	text-align: center;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+
+.section10 .uppertext h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.section10 .uppertext p{
+	font-weight: bold;
+	padding: 10px;
+}
+
+.section10 .details{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.section10 .details .side{
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+
+.section10 .details .side .form{
+	width: 60%;
+	padding-top: 10px;
+}
+
+.section10 .side h3{
+	font-weight: bold;
+	padding: 10px;
+}
+
+.section10 .side p{
+	padding: 10px;
+	padding-bottom: 10px;
+}
+
+.section10 .form{
+	padding-top:10px ;
+	width: 50%;
+	float: right;
+}
+
+.section10 .form ul{
+	width: 100%;
+	overflow: hidden;
+}
+
+.section10 .form ul li{
+	width: 50%;
+	min-height: 50px;
+	float: left;
+}
+
+.section10 .form ul li textarea{
+	width: 200px;
+    height: 25px;
+}
+
+.section10 .address{
+	width: 50%;
+	float: right;
+}
+
+.section10 .address ul{
+	width: 100%;
+}
+
+.section10 .address ul li textarea{
+	width: 92%;
+    height: 45px;
+}
+
+.section10 .button1{
+	align-items: center;
+}
+
+.section10 .button1 button{
+	width: 100px;
+	height: 30px;
+	background-color: black;
+	float: right;
+	padding: 10px;
+}
+
+.section10 .button1 button p{
+	width: 100%;
+	color: white;	
+}
+
+.section11{
+	width: 100%;
+	background-color: rgba(28, 36, 29, 0.781);
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.section11 .first{
+	width: 33.33%;
+	float: left;
+	text-align: left;
+}
+
+.section11 .second{
+	width: 33.33%;
+	float: left;
+}
+
+.section11 .last{
+	width: 33.33%;
+	float: left;
+}
+
+.section11 .first p{
+	padding-bottom: 10px;
+	color: whitesmoke;
+}
+
+
+.section11 .second p{
+	color: whitesmoke;
+	text-align: left;
+}
+
+.section11 .last p{
+	color: whitesmoke;
+}
+
+.section11 .last .map img{
+	width: 200px;
+	height: 100px;
+	
+}
+
+footer{
+	width: 100%;
+	background-color: rgba(28, 36, 29, 0.781);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+footer .foot1{
+	width: 50%;
+	float: left;
+}
+
+footer .foot2{
+	width: 50%;
+	float: right;
+}
+
+footer .foot2 ul{
+	float: right;
+	padding-right: 100px;
+}
+
+footer .foot2 ul li{
+	float: left;
+}
+
+.foot1 p{
+	color: whitesmoke;
+	padding-left: 50px;
+}
+
+footer .foot2 ul li p{
+	color: whitesmoke;
+	padding-right: 10px;
+}
+
+/* Responsive CSS */
+/* Standard Desktop */
+@media (min-width:992px) and (max-width:1200px){
+	
+}
+
+/* Tablet Portrait */
+@media (min-width:768px) and (max-width:991px){
+	
+}
+
+/* Mobile */
+@media (max-width:767px){
+	.container {
+		width:100%;
+	}
+}

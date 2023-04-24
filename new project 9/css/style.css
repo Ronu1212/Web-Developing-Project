@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content-body {
+  padding: 50px;
+  width: 100%;
+  background-image: url(../images/girlfriends-on-car-roof-admire-260nw-2027377541.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+.content-body .plate {
+  background-color: rgb(86, 86, 251);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 30px 20px 20px 20px;
+}
+.content-body .plate h2 {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: arial;
+  line-height: 48px;
+}
+.content-body form {
+  padding: 40px 60px;
+}
+.content-body form .form-field {
+  padding: 15px 50px;
+  text-align: center;
+  width: 70%;
+  display: inline-flex;
+  justify-content: center;
+}
+.content-body form .form-field label {
+  width: 50%;
+  padding-right: 20px;
+  color: red;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  text-align: left;
+  float: left;
+  font-size: 20px;
+}
+.content-body form .form-field label h4 {
+  background-color: rgb(86, 86, 251);
+  color: white;
+  padding: 5px;
+  display: inline-block;
+}
+.content-body form .form-field input {
+  width: 50%;
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  float: right;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+.content-body form .form-field textarea {
+  width: 50%;
+  padding: 5px;
+  height: 100px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  float: right;
+}
+.content-body form .form-field #button {
+  background-color: rgb(86, 86, 251);
+  color: white;
+  font-size: 20px;
+}
+
+/* Responsive CSS */
+/* Standard Desktop */
+/* Tablet Portrait */
+/* Mobile */
+@media (max-width: 767px) {
+  .content-body {
+    padding: 30px 15px;
+  }
+  .content-body .plate {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .content-body .plate h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .content-body form {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .content-body form .form-field {
+    width: 100%;
+    padding: 5px 0px;
+    display: inline-block;
+  }
+  .content-body form .form-field label {
+    width: 100%;
+    padding: 5px;
+  }
+  .content-body form .form-field input {
+    width: 100%;
+    padding: 5px;
+  }
+  .content-body form .form-field textarea {
+    width: 100%;
+    padding: 5px;
+  }
+}

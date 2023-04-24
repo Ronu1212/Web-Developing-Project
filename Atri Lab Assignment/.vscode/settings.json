@@ -1,0 +1,10 @@
+{
+    "editor.wrappingIndent": "indent",
+    "editor.formatOnPaste": false,
+    "editor.comments.insertSpace": true,
+    "html.format.wrapAttributesIndentSize": 2,
+    "editor.stickyTabStops": true,
+    "[dockercompose]": {
+        "editor.tabSize": 4
+    }
+}

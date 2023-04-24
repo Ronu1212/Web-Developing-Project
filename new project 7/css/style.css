@@ -1,0 +1,808 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #F04711;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+header .head-menu {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}
+header .head-menu ul {
+  float: right;
+}
+header .head-menu ul li {
+  float: left;
+  padding: 10px;
+}
+header .head-menu ul li a {
+  color: white;
+  font-size: 12px;
+}
+header .head-menu ul li a:hover {
+  text-decoration: none;
+}
+
+.home-section {
+  background-color: #F04711;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.home-section h1 {
+  color: #171F39;
+  font-size: 72px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease-in-out 0s;
+}
+.home-section h1:hover {
+  color: white;
+}
+.home-section h3 {
+  color: white;
+  font-size: 54px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Mountain-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+.Mountain-section .quote-icon::before {
+  padding-top: 60px;
+  background-image: url(../images/right-quote-sign.png);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 8%;
+  right: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+  content: "";
+}
+.Mountain-section h3 {
+  padding-top: 10px;
+  position: relative;
+  max-width: 75%;
+  color: #F04711;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 99;
+}
+.Mountain-section h5 {
+  padding-top: 10px;
+  color: #F04711;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Mountain-section .animation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Mountain-section .animation h6 {
+  padding-top: 10px;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Mountain-section .animation h6 strong {
+  font-weight: 700;
+}
+.Mountain-section p {
+  max-width: 45%;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-section {
+  width: 100%;
+  background-color: #171F39;
+  padding: 80px 0 0 0;
+}
+.slide-section p {
+  font-size: 39px;
+  line-height: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CEBDB7;
+}
+.slide-section strong {
+  color: #F04711;
+  font-weight: 600;
+}
+.slide-section .slides {
+  padding-top: 30px;
+}
+.slide-section .card {
+  width: 100%;
+  background-color: #171F39;
+  text-decoration: none;
+}
+.slide-section .card .card-header {
+  box-shadow: 15px 5px 15px 5px black;
+}
+.slide-section .card .btn {
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}
+.slide-section .card .num-one {
+  font-size: 130px;
+  line-height: 1em;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4C505F;
+  width: 225px;
+  left: 0%;
+  position: relative;
+}
+.slide-section .card h5 {
+  max-width: 100%;
+  left: 0%;
+  position: relative;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CEBDB7;
+  position: relative;
+  text-decoration: none !important;
+}
+.slide-section .card .arrow {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0%;
+  top: 30%;
+  position: absolute;
+}
+.slide-section .card .collapse .arrow:active {
+  transform: rotate(180);
+}
+.slide-section .card .card-body {
+  background-color: #F04711;
+}
+.slide-section .card .card-body .card-text {
+  max-width: 100%;
+  margin-left: 16%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.slide-section .card .card-body .card-text strong {
+  font-weight: 600;
+  font-size: 24px;
+  color: #CEBDB7;
+  padding-bottom: 30px;
+}
+.slide-section .card .card-body .card-text p {
+  font-size: 24px;
+  color: #CEBDB7;
+  padding-bottom: 15px;
+}
+.slide-section .card .card-body .card-text span {
+  color: black;
+}
+
+.performance {
+  padding-top: 80px;
+}
+.performance .left {
+  width: 100%;
+}
+.performance .left h5 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.performance .left h5 span {
+  color: #F04711;
+}
+.performance .right {
+  width: 80%;
+}
+.performance .right p {
+  font-size: 22px;
+  line-height: 1.2em;
+  font-family: "Helvetica Neue Light";
+  color: #171F39;
+}
+.performance .templates {
+  padding-top: 80px;
+  width: 100%;
+}
+.performance .templates ul {
+  width: 100%;
+  display: flex;
+}
+.performance .templates ul li {
+  float: left;
+  display: flex;
+}
+.performance .templates .temp-1 {
+  background-color: #F04711;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.performance .templates .temp-1 h5 {
+  padding: 40px 30px;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-1 p {
+  padding: 50px 30px 10px 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-1 span {
+  padding: 10px 30px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-1 img {
+  display: flex;
+  margin: 40px 30px 30px 30px;
+}
+.performance .templates .temp-2 {
+  background-color: rgb(110, 191, 245);
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.performance .templates .temp-2 h5 {
+  padding: 40px 30px;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-2 p {
+  padding: 50px 30px 10px 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-2 span {
+  padding: 10px 30px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-2 img {
+  display: flex;
+  margin: 40px 30px 30px 30px;
+}
+.performance .templates .temp-3 {
+  background-color: white;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.performance .templates .temp-3 h5 {
+  padding: 40px 30px 10px 30px;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-3 p {
+  padding: 50px 20px 10px 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-3 span {
+  padding: 10px 30px 30px 30px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.performance .templates .temp-3 img {
+  display: flex;
+  margin: 40px 30px 30px 30px;
+}
+
+.understanding-section {
+  background-color: #171F39;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.understanding-section .under h5 {
+  color: white;
+  font-size: 57px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.understanding-section .under .images {
+  margin-left: -70px;
+}
+.understanding-section .para {
+  padding-top: 50px;
+  width: 100%;
+}
+.understanding-section .para .para-1 {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.understanding-section .para .para-1 p {
+  color: #CEBDB7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.understanding-section .para .para-1 span img {
+  vertical-align: middle;
+}
+.understanding-section a {
+  color: #F04711;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slick-slider {
+  padding-top: 150px;
+  display: flex;
+  padding-bottom: 100px;
+}
+.slick-slider .pages-blue {
+  width: 700px;
+  padding: 100px 50px;
+  background-color: rgba(53, 184, 245, 0.74);
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+.slick-slider .pages-blue p {
+  font-size: 22px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slick-slider .pages {
+  width: 700px;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+.slick-slider .pages p {
+  font-size: 22px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slick-slider::before {
+  width: 200px;
+  height: 210px;
+  background: url(../images/open-quote.png) no-repeat left top/100%;
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 70%;
+  margin-left: -123px;
+  z-index: 9;
+}
+
+.Form {
+  background-color: #171F39;
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+.Form h1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 110px;
+}
+.Form h1 span {
+  color: #F04711;
+}
+.Form h5 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Form form .textbox {
+  background-color: #171F39;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  outline: none;
+  color: white;
+}
+.Form form .textarea {
+  background-color: #171F39;
+  color: white;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  outline: none;
+}
+.Form form img {
+  margin-top: 25px;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+footer .logo-black {
+  position: absolute;
+  padding-top: 10px;
+}
+footer .foot-menu {
+  position: absolute;
+  padding-top: 10px;
+  right: 15%;
+}
+footer .foot-menu ul {
+  width: 100%;
+}
+footer .foot-menu ul li {
+  float: left;
+  padding: 10px;
+}
+footer .foot-menu ul li a {
+  color: #171F39;
+  font-size: 12px;
+  text-decoration: none;
+}
+footer .footer-copyright {
+  width: 30%;
+  margin-left: 60%;
+  padding-top: 50px;
+}
+footer .footer-copyright a {
+  color: #171F39;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 20px;
+}
+footer .footer-copyright span {
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+/* Responsive CSS */
+/* Standard Desktop */
+/* Tablet Portrait */
+/* Mobile */
+@media (max-width: 767px) {
+  header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 999;
+  }
+  header .logo img {
+    padding-top: 10px;
+  }
+  header .hamburger {
+    text-align: right;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+
+  .head-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    z-index: 999;
+  }
+  .mobile-menu.active {
+    right: 0%;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .mobile-menu ul {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .mobile-menu ul li {
+    padding: 20px;
+  }
+  .mobile-menu ul li a {
+    color: #F04711;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .templates ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .templates ul li {
+    max-width: 100%;
+  }
+
+  .temp-1 {
+    width: 100%;
+  }
+
+  .temp-2 {
+    width: 100%;
+  }
+
+  .home-section {
+    padding-top: 120px;
+  }
+  .home-section h1 {
+    font-size: 40px;
+  }
+  .home-section h3 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .Mountain-section {
+    width: 100%;
+  }
+  .Mountain-section .quote-icon::before {
+    width: 100px;
+    height: 100px;
+    right: 10%;
+  }
+  .Mountain-section h3 {
+    max-width: 100%;
+    margin-right: -10px;
+    font-size: 42px;
+  }
+  .Mountain-section .animation h6 {
+    font-size: 24px;
+  }
+  .Mountain-section p {
+    max-width: 100%;
+  }
+
+  .slide-section p {
+    font-size: 24px;
+  }
+  .slide-section .card {
+    max-width: 100%;
+  }
+  .slide-section .card .conatiner {
+    padding: 0px;
+  }
+  .slide-section .card .num-one {
+    font-size: 50px;
+    left: 0%;
+  }
+  .slide-section .card h5 {
+    font-size: 22px;
+  }
+  .slide-section .card .arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0%;
+  }
+  .slide-section .card .card-body .container {
+    padding: 0px;
+  }
+  .slide-section .card .card-body .card-text {
+    max-width: 100%;
+    margin-left: 0% !important;
+  }
+  .slide-section .card .card-body .card-text p {
+    font-size: 20px;
+  }
+  .slide-section .card .card-body .card-text strong {
+    font-size: 20px;
+    padding: 0px;
+  }
+
+  .performance .left h5 {
+    font-size: 29px;
+  }
+  .performance .right {
+    width: 100%;
+    padding-top: 17px;
+  }
+  .performance .templates .temp-1 {
+    max-width: 100%;
+  }
+  .performance .templates .temp-2 {
+    max-width: 100%;
+  }
+  .performance .templates .temp-3 {
+    max-width: 100%;
+  }
+
+  .understanding-section .under {
+    flex-direction: column-reverse;
+  }
+  .understanding-section .under h5 {
+    font-size: 32px;
+  }
+  .understanding-section .under .images {
+    width: 330px;
+    height: 330px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+  .understanding-section .para {
+    padding-top: 10px;
+  }
+
+  .slick-slider {
+    padding-top: 80px;
+  }
+  .slick-slider .pages-blue {
+    padding: 50px 35px;
+    height: 700px;
+  }
+  .slick-slider .pages-blue p {
+    font-size: 16px;
+  }
+  .slick-slider .pages {
+    padding: 50px 35px;
+  }
+  .slick-slider .pages p {
+    font-size: 16px;
+  }
+
+  .slick-slider::before {
+    width: 100px;
+    height: 100px;
+    top: 6%;
+    left: 98%;
+  }
+
+  .Form {
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .Form h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .Form h5 {
+    font-size: 24px;
+  }
+  .Form form .textbox {
+    padding-top: 50px;
+    text-decoration: none;
+    outline: none;
+  }
+  .Form form a {
+    width: 100%;
+    margin-left: 35%;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  footer .logo-black {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+  footer .foot-menu {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    right: 0%;
+  }
+  footer .foot-menu ul {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+  footer .foot-menu ul li {
+    float: none;
+    padding: 5px;
+  }
+  footer .footer-copyright {
+    width: 100%;
+    padding-top: 10px;
+    margin-left: 0%;
+  }
+  footer .footer-copyright a {
+    width: 100%;
+    font-size: 18px;
+  }
+  footer .footer-copyright span {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 35%;
+  }
+}

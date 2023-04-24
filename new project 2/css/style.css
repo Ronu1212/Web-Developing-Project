@@ -1,0 +1,445 @@
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    padding-top: 10px;
+}
+
+header .logo{
+    width: 50%;
+    float: left;
+}
+
+header .headmenu{
+    width:50%;
+    float: right;
+    align-items: center;
+}
+
+header .headmenu .hamburger-icon {
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:green;
+    display:inline-block;
+}
+
+header .headmenu .close-icon {
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    display:inline-block;
+    z-index: 9;
+}
+
+header .headmenu ul{
+    float: right;
+}
+
+header .headmenu ul li{
+
+    float: left;
+    display: block;
+    padding-left: 20px;
+}
+
+header .headmenu ul li a{
+    color: rgb(15, 238, 100);
+}
+
+header .headmenu ul li::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgb(238, 235, 235);
+    margin: auto;
+    transition: 0.5s;
+}
+
+header .headmenu ul li:hover::after{
+    width: 100%;
+    background-color: white;
+}
+
+.section{
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/banner1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.section .text{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.section1{
+    background-color: springgreen;
+}
+
+.section1 .lefttext{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.section2{
+    width:100%;
+}
+
+.section2 h4{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.section2 .img img{
+    border-radius: 20px;
+}
+
+.section2 ul li{
+    padding-bottom: 30px;
+    display: block;
+}
+
+.section2 .leftText .leftpart {
+    width:40%;
+    float:left;
+}
+
+.section2 .leftText .img {
+    width:60%;
+    float:right;
+    padding-left:20px;
+}
+
+.section2 .rightText .rightpart {
+    width:40%;
+    float:right;
+    padding-left:20px;
+}
+
+.section2 .rightText .img {
+    width:62%;
+    float:left;
+}
+
+.section2 .img img{
+    border-radius: 20px;
+}
+
+.section3{
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.section3 .video{
+    width: 50%;
+    height: 100%;
+}
+
+.section3 .lefttext{
+    padding-top: 20px;
+    color: white;
+}
+
+.section4{
+    width: 100%;
+    background-color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section4 .container{
+    width: 70%;
+	margin: 0 15%;
+	background-color:black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section4 .menu ul{
+    overflow: hidden;
+}
+
+.section4 ul li{
+    display: block;
+}
+
+.section4 h4{
+    color: white;
+    padding-top: 10px;
+}
+
+.section4 h6{
+    color: white;
+}
+
+.section4 p{
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.section4 .button button{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    padding-bottom: 10px;
+
+}
+
+.section4 button h5{
+    color: white;
+}
+
+.section5{
+    width: 100%;
+    padding-top: 10px;
+    background-color: yellowgreen;
+    padding-bottom: 30px;
+}
+
+.section5 .players{
+    text-align: center;
+}
+
+.section5 .players h4{
+    font-weight: bold;
+}
+
+.section5 .players p{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.section5 .teamimg{
+    width: 50%;
+    float: left;
+}
+
+.section5 .name{
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+.section5 .name h6{
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+
+.section5 ul{
+    padding-top: 20px;
+}
+
+.section5 ul li{
+    display: block;
+}
+
+.section5 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.section6{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.section6 h4{
+    font-weight: bold;
+}
+
+.section6 p{
+    padding-bottom: 20px;
+}
+
+.section6 img{
+    width: 100px;
+    height: 100px;
+}
+
+.section7{
+    width: 100%;
+    background-color: rgb(201, 198, 198);
+    padding: 10px 0px;
+}
+
+.section7 h4{
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.section7 h5{
+    font-weight: bold;
+}
+
+.section7 h6{
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.section8{
+    width: 100%;
+    background-color:springgreen ;
+    padding-top: 30px;
+}
+
+.section8 img{
+    width: 50px;
+    height: 50px;
+}
+
+.section8 .icons p{
+    font-weight: bold;
+}
+
+.section9{
+    width: 100%;
+    background-color: rgb(201, 198, 198);
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.section9 .row{
+    padding-top: 20px;
+}
+
+.section9 button{
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.section10{
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+}
+
+.section10 h6{
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.section10 p{
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.section10 img{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    background-color: black;
+    padding-top: 10px;
+}
+
+footer .copyright h5{
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+footer .footermenu{
+    float: right;
+}
+
+footer .footermenu ul li{
+    float: left;
+    display: block;
+    padding: 20px;
+}
+
+
+
+
+
+/* Responsive CSS */
+/* Standard Desktop */
+@media (min-width:992px) and (max-width:1200px){
+
+}
+
+/* Tablet Portrait */
+@media(max-width:991px){
+    .section1 .lefttext{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    .section2{ 
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header .headmenu .primary-nav {
+        width:80%;
+        height:100%;
+        position:fixed;
+        top:0;
+        right:-100%;
+        background:gray;
+        margin:0;
+        padding:60px 20px;
+        overflow: auto;
+    }
+
+    header .headmenu ul {
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+
+    header .headmenu ul li {
+        width:100%;
+        padding:5px 0;
+    }
+
+    header .headmenu ul li a {
+        display: block;
+        padding:5px 10px;
+        color:#fff;
+    }
+}
+
+/* Mobile */ 
+@media (max-width:767px){
+    .section2 .leftpart{
+        align-items: center;
+    }
+
+    .section4 li .menu{
+        align-items:center;
+        text-align: center;
+    }
+    
+    .section4 .menu{
+        text-align: center !important;
+        padding-left: 10px;
+    }
+
+}
